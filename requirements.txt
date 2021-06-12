@@ -1,0 +1,11 @@
+pandas
+feast==0.9
+protobuf 
+gcsfs  
+google-cloud-dataproc==2.3.1
+confluent_kafka
+kafka-python
+avro
+plolty
+cufflinks
+sklearn
