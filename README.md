@@ -117,6 +117,9 @@ make apply-kcc
 - **Deploy Kubeflow cluster** :Your management cluster will need a namespace setup to administer the Google Cloud project where Kubeflow will be deployed. [Link](https://www.kubeflow.org/docs/distributions/gke/deploy/deploy-cli/)
 
 ---
+
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2")
+
 **Run the following command to pull upstream manifests from kubeflow/manifests repository**
 ```bash
 cd..
@@ -207,8 +210,10 @@ You can run the following command to get the URI for your deployment:
 
 
 
-<img src="https://raw.githubusercontent.com/feast-dev/feast/v0.9-branch/docs/assets/feast_logo.png" width="425"/> [i=Install link](https://docs.feast.dev/v/v0.9-branch/getting-started/install-feast/kubernetes-with-helm)
-Feast (Feature Store) is an operational data system for managing and serving machine learning features to models in production.
+<img src="https://raw.githubusercontent.com/feast-dev/feast/v0.9-branch/docs/assets/feast_logo.png" width="425"/> 
+
+
+Feast (Feature Store) is an operational data system for managing and serving machine learning features to models in production.[Install link](https://docs.feast.dev/v/v0.9-branch/getting-started/install-feast/kubernetes-with-helm)
 
 Check your deployment Once the Kubeflow kubernetes cluster.
 
@@ -241,6 +246,17 @@ kubectl get  svc |  grep redis-master
 ```bash
 kubectl patch service -n default feast-release-kafka -p '{"spec": {"type": "LoadBalancer"}}'  
 ```
+
+** Install Dataproc**
+```bash
+gcloud dataproc clusters create dataprocfeast --image-version='2.0.0-RC11-debian10' --region us-east1
+```
+
+## Install Grafana Prometheus
+```bash
+helm install prometheus stable/prometheus
+helm install grafana stable/grafana
+``` 
 
 
 
