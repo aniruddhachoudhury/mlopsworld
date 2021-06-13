@@ -1,5 +1,5 @@
 # 2nd Annual MLOps World: Machine Learning in Production Conference
-
+https://www.linkedin.com/in/aniruddha-choudhury-5a34b511b/
 ![](image.png)
 ## ⚡ Technologies
 
