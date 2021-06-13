@@ -1,0 +1,8 @@
+click
+dill
+pandas
+tensorflow==2.2.0
+google-cloud-storage
+sklearn
+google-api-python-client
+numpy==1.18.1
