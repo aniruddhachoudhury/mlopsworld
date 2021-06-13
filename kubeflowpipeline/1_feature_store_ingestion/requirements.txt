@@ -8,7 +8,6 @@ feast==0.9
 gcsfs
 adlfs
 s3fs
-pandas
 numpy==1.18.1
 google-cloud-storage==1.20.0
 google-cloud-dataproc==2.3.1
