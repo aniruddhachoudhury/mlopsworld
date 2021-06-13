@@ -235,7 +235,7 @@ kubectl create secret generic feast-postgresql --from-literal=postgresql-passwor
 helm install feast-release feast-charts/feast
 ```
 
-** Expose Redis to External LoadBalancer**
+**Expose Redis to External LoadBalancer**
 ```bash
 kubectl get svc |  grep redis-master
 kubectl patch service -n default feast-release-redis-master -p '{"spec": {"type": "LoadBalancer"}}'  
@@ -247,7 +247,7 @@ kubectl get  svc |  grep redis-master
 kubectl patch service -n default feast-release-kafka -p '{"spec": {"type": "LoadBalancer"}}'  
 ```
 
-** Install Dataproc**
+**Install Dataproc**
 ```bash
 gcloud dataproc clusters create dataprocfeast --image-version='2.0.0-RC11-debian10' --region us-east1
 ```
