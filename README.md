@@ -98,6 +98,9 @@ make create-context
 #Install the Cloud Config Connector
 make apply-kcc
 ```
+- **Deploy Kubeflow cluster** :Your management cluster will need a namespace setup to administer the Google Cloud project where Kubeflow will be deployed. [Link](https://www.kubeflow.org/docs/distributions/gke/deploy/deploy-cli/)
+
+---
 
   
   
