@@ -107,7 +107,7 @@ cd..
 cd kubeflow
 bash ./pull-upstream.sh
 ```
-<div class="animate__animated animate__bounce animate__repeat-2">Example</div>
+<div class="animate__slideInDown animate__bounce animate__repeat-2">Example</div>
 
 
 
