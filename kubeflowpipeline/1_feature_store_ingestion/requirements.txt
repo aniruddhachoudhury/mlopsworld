@@ -1,0 +1,14 @@
+pandas
+pyyaml
+sklearn
+h5py 
+dill
+click
+feast==0.9
+gcsfs
+adlfs
+s3fs
+numpy==1.18.1
+google-cloud-storage==1.20.0
+google-cloud-dataproc==2.3.1
+google-api-python-client==1.7.11
