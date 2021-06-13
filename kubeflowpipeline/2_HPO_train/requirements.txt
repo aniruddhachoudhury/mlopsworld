@@ -1,0 +1,6 @@
+click
+dill
+tensorflow==2.1.0
+google-cloud-storage
+pandas
+numpy==1.18.1
