@@ -252,7 +252,7 @@ kubectl patch service -n default feast-release-kafka -p '{"spec": {"type": "Load
 gcloud dataproc clusters create dataprocfeast --image-version='2.0.0-RC11-debian10' --region us-east1
 ```
 
-## Install Grafana Prometheus
+**Install Grafana Prometheus**
 ```bash
 helm install prometheus stable/prometheus
 helm install grafana stable/grafana
